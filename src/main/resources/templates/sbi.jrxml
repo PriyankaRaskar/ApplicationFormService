@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sbi" pageWidth="1220" pageHeight="1000" columnWidth="1180" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="42f52b52-f4a8-4140-82ed-0219db885a97">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="wcpAppNumber" class="java.lang.String"/>
+	<field name="bmName" class="java.lang.String"/>
+	<field name="approveYN" class="java.lang.String"/>
+	<field name="bnpfNumber" class="java.lang.String"/>
+	<field name="brEmp" class="java.lang.String"/>
+	<field name="brEmpName" class="java.lang.String"/>
+	<field name="mobileNumber" class="java.lang.String"/>
+	<field name="setcbreCode" class="java.lang.String"/>
+	<field name="bankBankPfIndexNumber" class="java.lang.String"/>
+	<field name="docExeCode" class="java.lang.String"/>
+	<field name="leadNo" class="java.lang.String"/>
+	<field name="applicationNew" class="java.lang.String"/>
+	<field name="applicationUpdate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1210" height="105" uuid="12121b71-3fdb-41fb-b4cc-c67261d2337b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["/src/main/resources/templates/images/sbi-header.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-20" y="1" width="240" height="21" forecolor="#FFFFFF" uuid="375f2529-6f5e-40fc-8eb4-86d2ca145361"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREDIT CARD APPLICATION FORM]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="609" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="390" y="2" width="51" height="20" uuid="195e2b6a-be71-44c6-b5fd-f91b693a520b"/>
+				<text><![CDATA[Form No]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="0" width="60" height="20" uuid="7ac5ac45-283f-4335-bf02-8bf53371af87"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="30" width="110" height="20" uuid="a5d510b4-e0d4-4c7b-933d-e0570bfc7ba2"/>
+				<text><![CDATA[WCP Application No.
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="30" width="130" height="20" uuid="ec571b02-0f9a-41c8-9c67-662a5d78a29a"/>
+				<textFieldExpression><![CDATA[$F{wcpAppNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="30" width="20" height="20" uuid="31a4bdc9-5c1f-4e05-b026-dca9dc940f46"/>
+				<textFieldExpression><![CDATA[$F{approveYN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="290" y="29" width="89" height="20" uuid="e1438672-2524-4caa-98d7-6c0b7d96aac1"/>
+				<text><![CDATA[Approve Y/N]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="58" width="99" height="22" uuid="f1db9bb4-43c4-40e6-9a23-8b63729febe3"/>
+				<text><![CDATA[BM Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="58" width="289" height="20" uuid="fc6dbcda-39e6-4241-8ea0-8e4770180dd3"/>
+				<textFieldExpression><![CDATA[$F{bmName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="29" width="51" height="21" uuid="53fb15bd-223b-492a-b7bb-697d2d02b7e5"/>
+				<text><![CDATA[BM PF No]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="29" width="81" height="21" uuid="17867082-0bc2-4c4c-8900-cc4a2689631f"/>
+				<textFieldExpression><![CDATA[$F{bnpfNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="57" width="51" height="21" uuid="8331ea12-6a05-4137-aed8-4ada290287e4"/>
+				<text><![CDATA[Br.Emp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="58" width="81" height="21" uuid="7af33ce1-5287-4704-99cd-00f4bbcd801c"/>
+				<textFieldExpression><![CDATA[$F{brEmp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="90" width="99" height="22" uuid="e447c313-92a3-480d-baae-76d9e43f6694"/>
+				<text><![CDATA[Br.Emp.Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="90" width="289" height="20" uuid="ead818d1-8679-4a2d-bbb8-99b52015efd8"/>
+				<textFieldExpression><![CDATA[$F{brEmpName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="90" width="56" height="20" uuid="313b1093-8517-4e9c-8d50-7e5da8938533"/>
+				<text><![CDATA[Mobile No.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="90" width="81" height="21" uuid="70b5109b-a6b0-420a-aaed-7687070dc880"/>
+				<textFieldExpression><![CDATA[$F{mobileNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="124" width="99" height="22" uuid="53ec2b40-f494-4b5f-b85f-9f1a7d47b2d9"/>
+				<text><![CDATA[SE/TC/BRE Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="125" width="289" height="20" uuid="6ac3d6e9-49c7-4059-8264-e1401faadc50"/>
+				<textFieldExpression><![CDATA[$F{setcbreCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="126" width="130" height="20" uuid="6aa708fb-71a2-4940-b286-f28ca6aef666"/>
+				<text><![CDATA[Bank Employee PF Index No]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="530" y="126" width="210" height="21" uuid="80e15c6d-609a-405e-916a-90aa0f710d98"/>
+				<textFieldExpression><![CDATA[$F{bankBankPfIndexNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="760" y="125" width="160" height="21" uuid="0b57b641-6440-45ad-9b2a-a97007f9451f"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="160" width="99" height="22" uuid="541848a7-38bf-43ff-837f-852196f2fa05"/>
+				<text><![CDATA[DOE Executive Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="160" width="289" height="20" uuid="2bf6bb14-e65a-4695-8d2f-e5f600e3512d"/>
+				<textFieldExpression><![CDATA[$F{docExeCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="160" width="130" height="20" uuid="d492fef7-abd5-488f-b29e-e0ae6c7c4e2d"/>
+				<text><![CDATA[Lead Reference Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="531" y="159" width="210" height="21" uuid="f820b395-7feb-4fa6-89e3-8d7acc84c634"/>
+				<textFieldExpression><![CDATA[$F{leadNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="760" y="160" width="60" height="20" uuid="ce925e82-9480-4461-9ed5-12d900b24764"/>
+				<text><![CDATA[FEE Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="830" y="160" width="130" height="21" uuid="ced92367-f5f1-4c25-807f-17d63417a815"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-19" y="190" width="99" height="22" uuid="cbee5614-d713-4a97-82b6-68be7b13bd92"/>
+				<text><![CDATA[Application Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="190" width="60" height="22" uuid="51044253-093e-43f5-b9b6-13157993fc1c"/>
+				<text><![CDATA[NEW Y/N]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="190" width="21" height="21" uuid="6ad7547c-5860-430f-9141-5b47c7a4a5ab"/>
+				<textFieldExpression><![CDATA[$F{applicationNew}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="190" width="79" height="22" uuid="259c6726-93b6-4c4a-b882-977dff13df9e"/>
+				<text><![CDATA[Update Y/N]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="190" width="21" height="21" uuid="5a288510-d69f-4d60-9f77-3cf7b23f39fd"/>
+				<textFieldExpression><![CDATA[$F{applicationUpdate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="330" y="190" width="140" height="21" uuid="7d480a31-2f6e-4fd5-8fa9-4c35f32b1ded"/>
+				<text><![CDATA[CKYC Identifier No/KIN No]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="191" width="210" height="21" uuid="645765a8-3917-4a91-a0ad-042a03fd8c2f"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="700" y="191" width="80" height="21" uuid="aaeed63b-0f3e-4878-9b80-720eaccdf799"/>
+				<text><![CDATA[Account Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="790" y="191" width="79" height="22" uuid="08151038-aa41-4fb0-aae0-55c215598c31"/>
+				<text><![CDATA[Normal Y/N]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="880" y="190" width="21" height="21" uuid="0aeebc0b-f590-47f0-9bea-ca0296a174e7"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="901" y="191" width="79" height="22" uuid="7fc2d3a7-fff9-4f0d-9fb4-4ac5c956c254"/>
+				<text><![CDATA[Simplifide Y/N]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="990" y="190" width="21" height="21" uuid="6f720b43-a744-40fc-8cbf-3312b1b68574"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-14" y="270" width="174" height="22" uuid="382567ae-8706-4fa8-9bac-4ada976d2423"/>
+				<text><![CDATA[Is your customer a VIP customer]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="231" width="140" height="20" uuid="5b9db8c3-98ed-4bc2-93bd-d3c8a2178759"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="230" width="99" height="22" uuid="02978b48-049b-4836-9313-1b928bce1d95"/>
+				<text><![CDATA[Source Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="231" width="99" height="22" uuid="5540b9e6-f9e5-44d1-b4e0-f77b8e84c6e3"/>
+				<text><![CDATA[Promo Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="350" y="232" width="130" height="20" uuid="80fc1af9-29dd-4a1f-9210-9bf9a2222034"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="231" width="130" height="20" uuid="8c405b4d-ebaa-49e5-94bb-8b068bfebdb8"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="740" y="230" width="99" height="22" uuid="731e0304-d40f-43c7-89f7-e4302665c588"/>
+				<text><![CDATA[CSM Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="950" y="231" width="99" height="22" uuid="ab971b13-3052-418a-aed8-237678ce92af"/>
+				<text><![CDATA[Branch Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="810" y="230" width="130" height="20" uuid="6a662e09-deec-48b7-9e0a-1a6f26e05347"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1060" y="232" width="130" height="20" uuid="e4229445-161d-4949-aaf6-daf8a987a702"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-14" y="235" width="99" height="22" uuid="d47b950d-487d-44a2-951f-305c1631a4ba"/>
+				<text><![CDATA[Card Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="270" width="30" height="22" uuid="9589314b-3e27-4283-8cc4-1ceffce009c0"/>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="271" width="21" height="21" uuid="d8988e57-744d-4f7b-bd60-3ef8fc98120b"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="270" width="25" height="21" uuid="9d477093-4922-468a-ab8f-cdde7df01e41"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="269" width="30" height="22" uuid="9cd8f8eb-51f9-493a-b0aa-b787e2d697cb"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="300" width="174" height="22" uuid="e3abeb9e-694e-4865-9762-4f9e9a607b88"/>
+				<text><![CDATA[Name of Sales Executive]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="301" width="710" height="20" uuid="e1ba2541-5d61-4035-80f7-a2a0c878fef1"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-4" y="330" width="168" height="22" uuid="a31f1074-8064-46e6-9a7d-705dfb7c0137"/>
+				<text><![CDATA[Name of ASM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="330" width="710" height="20" uuid="dc7f6da3-990e-4e27-a9dd-e47c65f95bc9"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-4" y="360" width="99" height="22" uuid="8814bc37-10e8-4e34-909f-8771e8f7fdc0"/>
+				<text><![CDATA[FCU Stamp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="360" width="140" height="20" uuid="9c8fb1a9-459f-4550-8555-3d0c99fb931c"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="359" width="140" height="22" uuid="8b105bb2-25ec-4017-bade-e1f70ffa8453"/>
+				<text><![CDATA[Signature(Sales Executive)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="400" y="362" width="130" height="20" uuid="8a375852-e164-44ac-b182-fd95cc6da43f"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="540" y="359" width="99" height="22" uuid="70dd45ca-7e28-4d95-80a6-5ba6084b25f6"/>
+				<text><![CDATA[Signature(ASM)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="650" y="360" width="130" height="20" uuid="cd1dbb59-45d3-4ab2-8bf1-f9f9a42688f4"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="390" width="950" height="22" uuid="007150a6-4b39-4ee1-a496-bf04c81c867b"/>
+				<text><![CDATA[Important Instruction: Applicant is Requested to complete all section in BLOCK LETTERS.Attach all relevant document as stated in the form.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="950" height="22" uuid="1fa5e3d6-901b-45a6-94b0-f6ddf29e3509"/>
+				<text><![CDATA[DOCUMENT REQUIRED:1.Passprt-size photograph 2.Photo ID proof 3.Residence address proof 4. Employment proof(Offer letter/Salary Slips)]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
