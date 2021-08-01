@@ -32,6 +32,52 @@ public class SbiFormInput{
 	private String fucStamp;
 	private String signatureExe;
 	private String signatureAsm;
+	private String sbielite;
+	private String sbiplatinum;
+	private String sbisimplyclick;
+	private String sbisimplysave;
+	private String sbidoctores;
+	private String sbiairindia;
+	private String sbiethiadguest;
+	private String sbietihadguestpremier;
+	private String eithadno;
+	private String salutationmr;
+	private String salutationmrs;
+	private String salutationms;
+	private String salutationothers;
+	private String firstname;
+	private String middlename;
+	private String surname;
+	private String maidenname;
+	private String nameoncard;
+	private String dob;
+	private String gendermale;
+	private String genderfemale;
+	private String genderthiredgender;
+	private String maritalstatusmarried;
+	private String maritalstatussingle;
+	private String maritalstatusothers;
+	private String spousesname;
+	private String mothersname;
+	private String fathersname;
+	private String educationclass10;
+	private String education12;
+	private String educationgraduate;
+	private String educationpostgraduate;
+	private String pan;
+	private String phone;
+	private String mobileno;
+	private String secondphoneno;
+	private String internationalno;
+	private String emailid;
+	private String nationality;
+	private String residentialaddress;
+	private String landmark;
+	private String city;
+	private String state;
+	private String pin;
+	private String formno;
+	
 	public String getWcpAppNumber() {
 		return wcpAppNumber;
 	}
@@ -200,19 +246,277 @@ public class SbiFormInput{
 	public void setSignatureAsm(String signatureAsm) {
 		this.signatureAsm = signatureAsm;
 	}
-	@Override
-	public String toString() {
-		return "SbiFormInput [wcpAppNumber=" + wcpAppNumber + ", bmName=" + bmName + ", approveYN=" + approveYN
-				+ ", bnpfNumber=" + bnpfNumber + ", brEmp=" + brEmp + ", mobileNumber=" + mobileNumber + ", brEmpName="
-				+ brEmpName + ", setcbreCode=" + setcbreCode + ", bankEmpPfIndexNumber=" + bankEmpPfIndexNumber
-				+ ", docExeCode=" + docExeCode + ", leadNo=" + leadNo + ", applicationNew=" + applicationNew
-				+ ", applicationUpdate=" + applicationUpdate + ", ckyc=" + ckyc + ", accountTypeNormal="
-				+ accountTypeNormal + ", accuntTypeSimlified=" + accuntTypeSimlified + ", cardType=" + cardType
-				+ ", sourceCode=" + sourceCode + ", promoCode=" + promoCode + ", csmCode=" + csmCode + ", branchCode="
-				+ branchCode + ", vipYes=" + vipYes + ", vipNo=" + vipNo + ", nameofSalesExe=" + nameofSalesExe
-				+ ", nameofAsm=" + nameofAsm + ", fucStamp=" + fucStamp + ", signatureExe=" + signatureExe
-				+ ", signatureAsm=" + signatureAsm + "]";
+	public String getSbielite() {
+		return sbielite;
 	}
+	public void setSbielite(String sbielite) {
+		this.sbielite = sbielite;
+	}
+	public String getSbiplatinum() {
+		return sbiplatinum;
+	}
+	public void setSbiplatinum(String sbiplatinum) {
+		this.sbiplatinum = sbiplatinum;
+	}
+	public String getSbisimplyclick() {
+		return sbisimplyclick;
+	}
+	public void setSbisimplyclick(String sbisimplyclick) {
+		this.sbisimplyclick = sbisimplyclick;
+	}
+	public String getSbisimplysave() {
+		return sbisimplysave;
+	}
+	public void setSbisimplysave(String sbisimplysave) {
+		this.sbisimplysave = sbisimplysave;
+	}
+	public String getSbidoctores() {
+		return sbidoctores;
+	}
+	public void setSbidoctores(String sbidoctores) {
+		this.sbidoctores = sbidoctores;
+	}
+	public String getSbiairindia() {
+		return sbiairindia;
+	}
+	public void setSbiairindia(String sbiairindia) {
+		this.sbiairindia = sbiairindia;
+	}
+	public String getSbiethiadguest() {
+		return sbiethiadguest;
+	}
+	public void setSbiethiadguest(String sbiethiadguest) {
+		this.sbiethiadguest = sbiethiadguest;
+	}
+	public String getSbietihadguestpremier() {
+		return sbietihadguestpremier;
+	}
+	public void setSbietihadguestpremier(String sbietihadguestpremier) {
+		this.sbietihadguestpremier = sbietihadguestpremier;
+	}
+	public String getEithadno() {
+		return eithadno;
+	}
+	public void setEithadno(String eithadno) {
+		this.eithadno = eithadno;
+	}
+	public String getSalutationmr() {
+		return salutationmr;
+	}
+	public void setSalutationmr(String salutationmr) {
+		this.salutationmr = salutationmr;
+	}
+	public String getSalutationmrs() {
+		return salutationmrs;
+	}
+	public void setSalutationmrs(String salutationmrs) {
+		this.salutationmrs = salutationmrs;
+	}
+	public String getSalutationms() {
+		return salutationms;
+	}
+	public void setSalutationms(String salutationms) {
+		this.salutationms = salutationms;
+	}
+	public String getSalutationothers() {
+		return salutationothers;
+	}
+	public void setSalutationothers(String salutationothers) {
+		this.salutationothers = salutationothers;
+	}
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	public String getMiddlename() {
+		return middlename;
+	}
+	public void setMiddlename(String middlename) {
+		this.middlename = middlename;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public String getMaidenname() {
+		return maidenname;
+	}
+	public void setMaidenname(String maidenname) {
+		this.maidenname = maidenname;
+	}
+	public String getNameoncard() {
+		return nameoncard;
+	}
+	public void setNameoncard(String nameoncard) {
+		this.nameoncard = nameoncard;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	public String getGendermale() {
+		return gendermale;
+	}
+	public void setGendermale(String gendermale) {
+		this.gendermale = gendermale;
+	}
+	public String getGenderfemale() {
+		return genderfemale;
+	}
+	public void setGenderfemale(String genderfemale) {
+		this.genderfemale = genderfemale;
+	}
+	public String getGenderthiredgender() {
+		return genderthiredgender;
+	}
+	public void setGenderthiredgender(String genderthiredgender) {
+		this.genderthiredgender = genderthiredgender;
+	}
+	public String getMaritalstatusmarried() {
+		return maritalstatusmarried;
+	}
+	public void setMaritalstatusmarried(String maritalstatusmarried) {
+		this.maritalstatusmarried = maritalstatusmarried;
+	}
+	public String getMaritalstatussingle() {
+		return maritalstatussingle;
+	}
+	public void setMaritalstatussingle(String maritalstatussingle) {
+		this.maritalstatussingle = maritalstatussingle;
+	}
+	public String getMaritalstatusothers() {
+		return maritalstatusothers;
+	}
+	public void setMaritalstatusothers(String maritalstatusothers) {
+		this.maritalstatusothers = maritalstatusothers;
+	}
+	public String getSpousesname() {
+		return spousesname;
+	}
+	public void setSpousesname(String spousesname) {
+		this.spousesname = spousesname;
+	}
+	public String getMothersname() {
+		return mothersname;
+	}
+	public void setMothersname(String mothersname) {
+		this.mothersname = mothersname;
+	}
+	public String getFathersname() {
+		return fathersname;
+	}
+	public void setFathersname(String fathersname) {
+		this.fathersname = fathersname;
+	}
+	public String getEducationclass10() {
+		return educationclass10;
+	}
+	public void setEducationclass10(String educationclass10) {
+		this.educationclass10 = educationclass10;
+	}
+	public String getEducation12() {
+		return education12;
+	}
+	public void setEducation12(String education12) {
+		this.education12 = education12;
+	}
+	public String getEducationgraduate() {
+		return educationgraduate;
+	}
+	public void setEducationgraduate(String educationgraduate) {
+		this.educationgraduate = educationgraduate;
+	}
+	public String getEducationpostgraduate() {
+		return educationpostgraduate;
+	}
+	public void setEducationpostgraduate(String educationpostgraduate) {
+		this.educationpostgraduate = educationpostgraduate;
+	}
+	public String getPan() {
+		return pan;
+	}
+	public void setPan(String pan) {
+		this.pan = pan;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getMobileno() {
+		return mobileno;
+	}
+	public void setMobileno(String mobileno) {
+		this.mobileno = mobileno;
+	}
+	public String getSecondphoneno() {
+		return secondphoneno;
+	}
+	public void setSecondphoneno(String secondphoneno) {
+		this.secondphoneno = secondphoneno;
+	}
+	public String getInternationalno() {
+		return internationalno;
+	}
+	public void setInternationalno(String internationalno) {
+		this.internationalno = internationalno;
+	}
+	public String getEmailid() {
+		return emailid;
+	}
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+	public String getNationality() {
+		return nationality;
+	}
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+	public String getResidentialaddress() {
+		return residentialaddress;
+	}
+	public void setResidentialaddress(String residentialaddress) {
+		this.residentialaddress = residentialaddress;
+	}
+	public String getLandmark() {
+		return landmark;
+	}
+	public void setLandmark(String landmark) {
+		this.landmark = landmark;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getPin() {
+		return pin;
+	}
+	public void setPin(String pin) {
+		this.pin = pin;
+	}
+	public String getFormno() {
+		return formno;
+	}
+	public void setFormno(String formno) {
+		this.formno = formno;
+	}
+	
 	
 	
 	

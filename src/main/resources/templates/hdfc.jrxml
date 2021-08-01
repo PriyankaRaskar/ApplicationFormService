@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hdfc" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="771" leftMargin="20" rightMargin="51" topMargin="20" bottomMargin="20" uuid="f02c6eb6-86bd-43a2-be62-1a6802731c3a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="0" y="0" width="550" height="90" uuid="16d37ad0-0747-469c-93af-747b37075f8e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["src/main/resources/templates/images/hdfclogo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="379" splitType="Stretch">
+			<staticText>
+				<reportElement x="-21" y="0" width="571" height="21" uuid="1d44de8b-9352-4857-a5e5-3a430745b733"/>
+				<text><![CDATA[      Please indicate your choice of HDFC bank international credit card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="30" width="100" height="21" uuid="423c176b-c7c6-44f2-8978-2fc6162aa7a2"/>
+				<text><![CDATA[Silver Card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="30" width="100" height="21" uuid="de0d1492-309d-4316-8c5a-8646f70ee357"/>
+				<text><![CDATA[Gold Card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="30" width="100" height="21" uuid="ccd8bfe7-41c6-4505-a719-c0795e75d355"/>
+				<text><![CDATA[Value Plus Card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="30" width="100" height="21" uuid="10a8e91b-a79d-4c09-a6e8-42930742edc2"/>
+				<text><![CDATA[Titanium Card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="30" width="100" height="21" uuid="2783daa7-92d2-48dc-9ac0-61cc2119605e"/>
+				<text><![CDATA[Platinum Plus Card ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="30" width="100" height="21" uuid="a2c92015-7bd0-4858-a129-a017f961db34"/>
+				<text><![CDATA[Business Gold Card]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="30" width="21" height="21" uuid="185b1075-97cf-4668-85ed-b0cb155f11f7"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="30" width="21" height="21" uuid="4a6866ea-c20f-4b33-aa8e-7457349b29a2"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="30" width="21" height="21" uuid="7b17925d-71d8-4e3d-86b1-03cc6faac061"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="30" width="21" height="21" uuid="4360d289-4ed4-4e74-839b-77857a2c00fd"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="550" y="30" width="21" height="21" uuid="1b2429ab-8e93-4397-9590-39e10c853283"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="30" width="21" height="21" uuid="3d978763-65b8-4a27-870a-098a49b4bfaf"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="60" width="110" height="21" uuid="3a29c460-ecf8-4fba-8ce6-e637f1d74c7e"/>
+				<text><![CDATA[Annual Fee:700]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="60" width="110" height="21" uuid="ecb319a7-6dc0-42f3-bbda-d95009426407"/>
+				<text><![CDATA[Annual Fee:2000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="60" width="110" height="21" uuid="14040241-1005-483c-8f62-25650280eecc"/>
+				<text><![CDATA[Annual Fee:700]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="60" width="110" height="21" uuid="ec7100e1-c19f-4a1d-abe6-22d04e99ce45"/>
+				<text><![CDATA[Annual Fee:3999]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="60" width="110" height="21" uuid="f33c8f2a-96ce-4f45-a2f8-27d37f9bbef4"/>
+				<text><![CDATA[Annual Fee:3999]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="60" width="110" height="21" uuid="2341512d-8b63-4484-9460-187c6ebddd85"/>
+				<text><![CDATA[Annual Fee:750]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
