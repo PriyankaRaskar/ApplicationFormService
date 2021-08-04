@@ -45,104 +45,27 @@
 	<field name="companypin" class="java.lang.String"/>
 	<field name="companylandmark" class="java.lang.String"/>
 	<field name="companytelno" class="java.lang.String"/>
+	<background>
+		<band height="11" splitType="Stretch"/>
+	</background>
 	<title>
-		<band height="91" splitType="Prevent">
+		<band height="91" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
-			<image>
-				<reportElement x="0" y="0" width="710" height="90" uuid="16d37ad0-0747-469c-93af-747b37075f8e">
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<imageExpression><![CDATA["src/main/resources/templates/images/hdfclogo.jpg"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="280" y="-1" width="441" height="91" forecolor="#000000" uuid="5d0aac52-b00c-4ec4-8fdf-9450f13ba3ec"/>
 				<textElement textAlignment="Center">
 					<font size="20"/>
 				</textElement>
-				<text><![CDATA[HDFC Credit Card Application Form]]></text>
+				<text><![CDATA[Citibank Credit Card Application Form]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="800" height="80" uuid="f15d09ff-4b78-4dae-9057-ae213da04aa9"/>
+				<imageExpression><![CDATA["src/main/resources/templates/citibank.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<detail>
-		<band height="531" splitType="Immediate">
-			<staticText>
-				<reportElement x="-21" y="0" width="571" height="21" uuid="1d44de8b-9352-4857-a5e5-3a430745b733"/>
-				<text><![CDATA[      Please indicate your choice of HDFC bank international credit card]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="40" y="30" width="100" height="21" uuid="423c176b-c7c6-44f2-8978-2fc6162aa7a2"/>
-				<text><![CDATA[Silver Card]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="180" y="30" width="100" height="21" uuid="de0d1492-309d-4316-8c5a-8646f70ee357"/>
-				<text><![CDATA[Gold Card]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="320" y="30" width="100" height="21" uuid="ccd8bfe7-41c6-4505-a719-c0795e75d355"/>
-				<text><![CDATA[Value Plus Card]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="450" y="30" width="100" height="21" uuid="10a8e91b-a79d-4c09-a6e8-42930742edc2"/>
-				<text><![CDATA[Titanium Card]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="580" y="30" width="100" height="21" uuid="2783daa7-92d2-48dc-9ac0-61cc2119605e"/>
-				<text><![CDATA[Platinum Plus Card ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="710" y="30" width="100" height="21" uuid="a2c92015-7bd0-4858-a129-a017f961db34"/>
-				<text><![CDATA[Business Gold Card]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="10" y="30" width="21" height="21" uuid="185b1075-97cf-4668-85ed-b0cb155f11f7"/>
-				<textFieldExpression><![CDATA[$F{silvercard}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="150" y="30" width="21" height="21" uuid="4a6866ea-c20f-4b33-aa8e-7457349b29a2"/>
-				<textFieldExpression><![CDATA[$F{goldcard}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="290" y="30" width="21" height="21" uuid="7b17925d-71d8-4e3d-86b1-03cc6faac061"/>
-				<textFieldExpression><![CDATA[$F{valuepluscard}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="420" y="30" width="21" height="21" uuid="4360d289-4ed4-4e74-839b-77857a2c00fd"/>
-				<textFieldExpression><![CDATA[$F{titanimcard}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="550" y="30" width="21" height="21" uuid="1b2429ab-8e93-4397-9590-39e10c853283"/>
-				<textFieldExpression><![CDATA[$F{platinumpluscard}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="680" y="30" width="21" height="21" uuid="3d978763-65b8-4a27-870a-098a49b4bfaf"/>
-				<textFieldExpression><![CDATA[$F{bisnessgoldcard}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="10" y="60" width="110" height="21" uuid="3a29c460-ecf8-4fba-8ce6-e637f1d74c7e"/>
-				<text><![CDATA[Annual Fee:700]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="150" y="60" width="110" height="21" uuid="ecb319a7-6dc0-42f3-bbda-d95009426407"/>
-				<text><![CDATA[Annual Fee:2000]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="290" y="60" width="110" height="21" uuid="14040241-1005-483c-8f62-25650280eecc"/>
-				<text><![CDATA[Annual Fee:700]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="420" y="60" width="110" height="21" uuid="ec7100e1-c19f-4a1d-abe6-22d04e99ce45"/>
-				<text><![CDATA[Annual Fee:3999]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="550" y="60" width="110" height="21" uuid="f33c8f2a-96ce-4f45-a2f8-27d37f9bbef4"/>
-				<text><![CDATA[Annual Fee:3999]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="680" y="60" width="110" height="21" uuid="2341512d-8b63-4484-9460-187c6ebddd85"/>
-				<text><![CDATA[Annual Fee:750]]></text>
-			</staticText>
+		<band height="531" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="120" width="100" height="21" uuid="81db8c35-da6d-4a7c-80ff-d69d374fa8d1"/>
 				<text><![CDATA[Title Mr/Mrs/Ms/Dr]]></text>
@@ -261,7 +184,6 @@
 			</textField>
 			<staticText>
 				<reportElement x="-1" y="330" width="181" height="21" uuid="a59d05b8-35e5-4270-a67b-1c691fe21eb7"/>
-				<textElement verticalAlignment="Top"/>
 				<text><![CDATA[PAN NO.]]></text>
 			</staticText>
 			<textField>
@@ -348,6 +270,13 @@
 				<reportElement x="590" y="330" width="181" height="21" uuid="0aff42ad-af31-400e-ab75-592db869cdb3"/>
 				<textFieldExpression><![CDATA[$F{passportno}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="0" y="9" width="771" height="61" uuid="b3134c00-18ea-45db-afec-3c0062f9a7dc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Note:Please notify us of your contact details onces you filled this applivcation form and are ready with requierd identity Documentby calling citiphone.Alternativly,you may log in to www.citibank.com]]></text>
+			</staticText>
 		</band>
 		<band height="531">
 			<staticText>

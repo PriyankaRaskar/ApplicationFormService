@@ -2,8 +2,9 @@ package com.exl.appform.formservice.input;
 
 import com.exl.appform.formservice.bean.AppFormBean;
 
-public class SbiFormInput{
+public class SbiFormInput implements AppFormBean{
 
+	private String requestid;
 	private String wcpAppNumber;
 	private String bmName;
 	private String approveYN;
@@ -78,6 +79,13 @@ public class SbiFormInput{
 	private String pin;
 	private String formno;
 	
+	
+	public String getRequestid() {
+		return requestid;
+	}
+	public void setRequestid(String requestid) {
+		this.requestid = requestid;
+	}
 	public String getWcpAppNumber() {
 		return wcpAppNumber;
 	}

@@ -94,7 +94,7 @@
 				<textElement>
 					<font size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CREDIT CARD APPLICATION FORM]]></text>
+				<text><![CDATA[SBI CREDIT CARD APPLICATION FORM]]></text>
 			</staticText>
 		</band>
 	</title>
